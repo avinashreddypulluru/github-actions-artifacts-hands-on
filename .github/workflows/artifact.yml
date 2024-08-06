@@ -24,12 +24,12 @@ jobs:
     needs: build
     steps:
 
-    - name: Archive text file
+    - name: Download text file
       uses: actions/download-artifact@v2
       with:
         name: hello-artifact
         path: ./artifacts
 
-    - name: Display the contents of a text file
+    - name: Display content of the text file
       run: cat ./artifacts/hello.txt
   
