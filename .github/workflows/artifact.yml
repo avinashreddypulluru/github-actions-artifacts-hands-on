@@ -31,5 +31,5 @@ jobs:
         path: ./artifacts
 
     - name: Display the contents of a text file
-      run: cacat ./artifacts/hello.txt
+      run: cat ./artifacts/hello.txt
   
